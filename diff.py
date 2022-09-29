@@ -1,3 +1,4 @@
+
 print('How many items do you wish to enter into the list?')
 cnt = input()
 input_array=list()
@@ -13,4 +14,13 @@ for i in range(1,int(cnt)):
     difference_array.append(difference)
 
 
-print('The highest difference between values is :' +  str(max(difference_array)))
+# find max value using loop
+max_val = difference_array[0]
+for val in difference_array:
+    if val > max_val:
+        max_val = val
+# display the max value
+print(max_val)
+
+
+print('The highest difference between values is :' +  str(max_val))
