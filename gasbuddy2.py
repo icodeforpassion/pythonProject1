@@ -10,11 +10,8 @@ while exit_flag==False:
     if str(inp).upper() == "QUIT":
         exit_flag = True
     else:
-        try:
-            input_array.append(int(inp))
-        except:
-            print("The input is a character and not number")
-            loop_variable = loop_variable -1 
+        input_array.append(int(inp))
+        
 
 min_val=input_array[0]#assinging the first value to the variable before looping to find if there are any lower values
 max_val= input_array[0] #assinging the first value to the variable before looping to find if there are any lower values
